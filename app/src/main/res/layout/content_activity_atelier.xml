@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.ActivityAtelier"
+        tools:showIn="@layout/activity_atelier">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/slider2"
+            android:scaleType="centerCrop"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photographerGalleryTabRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:choiceMode="singleChoice" />
+
+        <TextView
+            android:id="@+id/txtAtelierAboutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="24sp"
+            android:text="درباره ی ما"/>
+
+        <TextView
+            android:id="@+id/txtAtelierAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="@string/atelier_about"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photographerImageGalleryRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:scrollbars="horizontal"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:choiceMode="singleChoice" />
+
+        <include layout="@layout/layout_activity_atelier_specification" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

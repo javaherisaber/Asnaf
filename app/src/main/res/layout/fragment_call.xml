@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_gravity="top|center_horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="32sp"
+            android:textColor="#111111"
+            android:text="تماس با ما"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnCall"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:text="09213538424"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:drawableRight="@mipmap/ic_call"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="4dp"
+            android:theme="@style/CallButton1"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEmail"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:text="info@example.ir"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:drawableRight="@mipmap/ic_mail"
+            android:drawablePadding="4dp"
+            android:theme="@style/CallButton2"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnWeb"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:text="www.ang.ir"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:drawableRight="@mipmap/ic_web"
+            android:drawablePadding="4dp"
+            android:theme="@style/CallButton3"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnTelegram"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:text="\@Canon"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:drawableRight="@mipmap/ic_telegram"
+            android:drawablePadding="4dp"
+            android:theme="@style/CallButton4"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context="ir.highroid.catalog.activity.ActivityHome"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
